@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Holtzberg";
+  src: url("/assets/fonts/Holtzberg-Regular.otf");
+}
+
+body {
+  background-color: #2e3440;
+}
+
+h1 {
+  font-family: "Holtzberg";
+}
+
+/* .gen_card {
+  transition: 0.3s ease-out;
+  box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+}
+
+.gen_card:hover {
+  cursor: pointer;
+  transform: translate(-1%, -4%);
+  background-color: #434c5e;
+} */
+
+.gen_card {
+  --shadow-color: 286deg 36% 56%;
+  --shadow-elevation-high: 0.3px 0.1px 0.4px hsl(var(--shadow-color) / 0.34),
+    1.6px 0.4px 1.9px -0.4px hsl(var(--shadow-color) / 0.34),
+    3px 0.8px 3.5px -0.7px hsl(var(--shadow-color) / 0.34),
+    5px 1.3px 5.8px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.9px 2.1px 9.2px -1.4px hsl(var(--shadow-color) / 0.34),
+    12.4px 3.2px 14.4px -1.8px hsl(var(--shadow-color) / 0.34),
+    18.8px 4.9px 21.9px -2.1px hsl(var(--shadow-color) / 0.34),
+    27.7px 7.2px 32.2px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
+.bg_img:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
