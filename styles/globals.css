@@ -8,11 +8,36 @@
 }
 
 body {
-  background-color: #2e3440;
+  background-color: #3b4252;
 }
 
 h1 {
   font-family: "Holtzberg";
+}
+
+.pokeCard {
+  padding: 12px;
+  background-color: #2e3440;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  min-height: 300px;
+  min-width: 250px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
+}
+
+.pokeCard:hover {
+  transform: translate(-1%, -4%);
+  background-color: #434c5e;
 }
 
 /* .gen_card {
@@ -21,6 +46,7 @@ h1 {
   -webkit-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 15px 22px 15px 0px rgba(0, 0, 0, 0.69);
 }
+
 
 .gen_card:hover {
   cursor: pointer;
