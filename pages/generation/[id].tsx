@@ -11,8 +11,6 @@ import PokeCard from "../../components/PokeCard";
 const Gen = ({
   genNumData,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(genNumData.pokemon_species);
-
   return (
     <div className="flex items-center justify-center w-full h-fit">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-8 mx-10 mt-4 mb-12">
@@ -60,6 +58,7 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
   const allGenPokemon = await fetch(
     `https://pokeapi.co/api/v2/generation/${params.id}`
   );
+
   const genNumData = await allGenPokemon.json();
 
   return {

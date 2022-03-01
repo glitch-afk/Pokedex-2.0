@@ -2,7 +2,6 @@ import { InferGetStaticPropsType } from "next";
 import Generation from "../components/Generation";
 
 const Home = ({ GenData }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(GenData);
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-6xl my-10 text-[#d8dee9]">Pokedex</h1>
